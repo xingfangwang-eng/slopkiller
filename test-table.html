@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Table Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333333;
+            margin: 20px 0 10px;
+            font-size: 1.4rem;
+        }
+
+        h3 {
+            color: #555555;
+            margin: 15px 0 10px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .keyword-selector {
+            margin-bottom: 20px;
+        }
+
+        .keyword-selector label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .keyword-selector select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        #table-container {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Data Table Test</h1>
+        <p>This page tests the dynamic data table generation for different keywords.</p>
+
+        <div class="keyword-selector">
+            <label for="keyword">Select a keyword:</label>
+            <select id="keyword" onchange="updateTable()">
+                <option value="how to hide ai art on pinterest 2026">how to hide ai art on pinterest 2026</option>
+                <option value="google image search without ai generated content">google image search without ai generated content</option>
+                <option value="why does every stock photo look fake now">why does every stock photo look fake now</option>
+                <option value="block midjourney images from google results">block midjourney images from google results</option>
+                <option value="how to tell if a pinterest recipe photo is ai">how to tell if a pinterest recipe photo is ai</option>
+            </select>
+        </div>
+
+        <div id="table-container"></div>
+    </div>
+
+    <script>
+        // Load generated pages data
+        let pages = [];
+
+        fetch('generated_pages.json')
+            .then(response => response.json())
+            .then(data => {
+                pages = data;
+                updateTable();
+            })
+            .catch(error => {
+                console.error('Error loading pages:', error);
+                document.getElementById('table-container').innerHTML = '<p>Error loading pages. Please make sure generated_pages.json exists.</p>';
+            });
+
+        function updateTable() {
+            const keyword = document.getElementById('keyword').value;
+            const page = pages.find(p => p.keyword === keyword);
+            
+            if (page) {
+                // Extract the table from the content
+                const content = page.content;
+                const tableStart = content.indexOf('<table');
+                const tableEnd = content.indexOf('</table>') + '</table>'.length;
+                
+                if (tableStart !== -1 && tableEnd !== -1) {
+                    const tableHtml = content.substring(tableStart, tableEnd);
+                    document.getElementById('table-container').innerHTML = `
+                        <h2>Data Table for: ${keyword}</h2>
+                        ${tableHtml}
+                    `;
+                } else {
+                    document.getElementById('table-container').innerHTML = '<p>Table not found in this page.</p>';
+                }
+            } else {
+                document.getElementById('table-container').innerHTML = '<p>Page not found.</p>';
+            }
+        }
+    </script>
+</body>
+</html>

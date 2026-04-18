@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO & CRO Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333333;
+            margin: 20px 0 10px;
+            font-size: 1.4rem;
+        }
+
+        h3 {
+            color: #555555;
+            margin: 15px 0 10px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .keyword-selector {
+            margin-bottom: 20px;
+        }
+
+        .keyword-selector label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .keyword-selector select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        #content {
+            margin-top: 30px;
+        }
+
+        .calculator-card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            border-left: 4px solid #ff3333;
+        }
+
+        .calculator-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            color: #333333;
+        }
+
+        .form-group input[type="number"] {
+            padding: 0.8rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .feature-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 0.8rem;
+            margin-top: 0.5rem;
+        }
+
+        .feature-options label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 400;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+
+        .feature-options input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #ff3333;
+        }
+
+        .btn {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: #ff3333;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background-color: #e62929;
+            transform: translateY(-2px);
+        }
+
+        .result {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #ffffff;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            border-left: 3px solid #ff3333;
+        }
+
+        .result p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #333333;
+        }
+
+        .result span {
+            font-weight: 700;
+            color: #ff3333;
+            font-size: 1.2rem;
+        }
+
+        .result.animate span {
+            animation: pulse 0.8s ease-in-out;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .json-ld-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .json-ld-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333333;
+        }
+
+        .cta-counter {
+            font-weight: bold;
+            color: #ff3333;
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Slop Killer",
+      "description": "A tool to detect and filter AI-generated content",
+      "url": "https://slopkiller.com",
+      "applicationCategory": "Productivity",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "9.99",
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "Slop Killer"
+        }
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Will Slop Killer completely eliminate all AI-generated content?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While Slop Killer is highly effective, no system is 100% perfect. It will significantly reduce the amount of AI slop you see, but some edge cases may still slip through."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Slop Killer work on all platforms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Slop Killer is designed to work across major browsers and platforms, including Chrome, Firefox, Safari, and mobile devices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will using Slop Killer slow down my browsing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, Slop Killer is optimized for performance and runs efficiently in the background without noticeable impact on your browsing speed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often is Slop Killer updated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The system receives regular updates to adapt to new AI generation techniques and improve detection accuracy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Slop Killer free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Slop Killer offers a free version with basic filtering capabilities, and a pro version with advanced features for $9.99."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>SEO & CRO Test</h1>
+        <p>This page tests the SEO optimization and conversion rate optimization features.</p>
+
+        <div class="keyword-selector">
+            <label for="keyword">Select a keyword:</label>
+            <select id="keyword" onchange="updatePage()">
+                <option value="how to hide ai art on pinterest 2026">how to hide ai art on pinterest 2026</option>
+                <option value="google image search without ai generated content">google image search without ai generated content</option>
+                <option value="why does every stock photo look fake now">why does every stock photo look fake now</option>
+                <option value="block midjourney images from google results">block midjourney images from google results</option>
+                <option value="how to tell if a pinterest recipe photo is ai">how to tell if a pinterest recipe photo is ai</option>
+            </select>
+        </div>
+
+        <div id="content"></div>
+
+        <div class="json-ld-section">
+            <div class="json-ld-title">JSON-LD Structured Data</div>
+            <p>Check the page source to see the JSON-LD structured data for SoftwareApplication and FAQPage.</p>
+        </div>
+    </div>
+
+    <script>
+        // Load generated pages data
+        let pages = [];
+
+        fetch('generated_pages.json')
+            .then(response => response.json())
+            .then(data => {
+                pages = data;
+                updatePage();
+            })
+            .catch(error => {
+                console.error('Error loading pages:', error);
+                document.getElementById('content').innerHTML = '<p>Error loading pages. Please make sure generated_pages.json exists.</p>';
+            });
+
+        function updatePage() {
+            const keyword = document.getElementById('keyword').value;
+            const page = pages.find(p => p.keyword === keyword);
+            
+            if (page) {
+                document.getElementById('content').innerHTML = `
+                    <h2>${page.title}</h2>
+                    <p><strong>Keyword:</strong> ${page.keyword}</p>
+                    <p><strong>Meta Description:</strong> ${page.metaDescription}</p>
+                    <h3>${page.h1}</h3>
+                    <div>${page.content}</div>
+                `;
+                
+                // Add the script (remove the script tags first)
+                const scriptElement = document.createElement('script');
+                const scriptContent = page.script.replace(/<\/script>/g, '').replace(/<script>/g, '');
+                scriptElement.innerHTML = scriptContent;
+                document.body.appendChild(scriptElement);
+            } else {
+                document.getElementById('content').innerHTML = '<p>Page not found.</p>';
+            }
+        }
+
+        // CTA Counter
+        function updateCounter() {
+            // Get current date
+            const today = new Date().toISOString().split('T')[0];
+            
+            // Get stored counter value or initialize
+            let counter = localStorage.getItem('slop_killer_counter_' + today);
+            if (!counter) {
+                // Start with a base value and add some randomness
+                counter = Math.floor(10000 + Math.random() * 5000);
+            } else {
+                counter = parseInt(counter);
+            }
+            
+            // Increment counter
+            counter += Math.floor(Math.random() * 10) + 1;
+            
+            // Store updated counter
+            localStorage.setItem('slop_killer_counter_' + today, counter);
+            
+            // Update all counter elements
+            const counterElements = document.querySelectorAll('.slop-counter');
+            counterElements.forEach(element => {
+                element.textContent = counter.toLocaleString();
+            });
+        }
+
+        // Initialize counter and update every 5 seconds
+        updateCounter();
+        setInterval(updateCounter, 5000);
+
+        // Track user visit
+        function trackVisit() {
+            const visits = localStorage.getItem('slop_killer_visits') || 0;
+            localStorage.setItem('slop_killer_visits', parseInt(visits) + 1);
+            
+            // Show personalized message based on visit count
+            const visitCount = parseInt(localStorage.getItem('slop_killer_visits'));
+            const ctaElements = document.querySelectorAll('.cta-personalized');
+            ctaElements.forEach(element => {
+                if (visitCount === 1) {
+                    element.textContent = "Welcome! Try Slop Killer Pro for free today.";
+                } else if (visitCount > 5) {
+                    element.textContent = "You've visited us multiple times. Ready to upgrade to Pro?";
+                } else {
+                    element.textContent = "Get Slop Killer Pro for enhanced protection.";
+                }
+            });
+        }
+
+        // Run on page load
+        trackVisit();
+    </script>
+</body>
+</html>

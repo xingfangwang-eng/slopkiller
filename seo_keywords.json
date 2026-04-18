@@ -1,0 +1,618 @@
+[
+  {
+    "keyword": "how to hide ai art on pinterest 2026",
+    "intent": "Solution Seeking",
+    "scenario": "User is frustrated by the high volume of AI images cluttering their inspiration boards.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "google image search without ai generated content",
+    "intent": "Solution Seeking",
+    "scenario": "Professional designer looking for real-world photo references without AI artifacts.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "why does every stock photo look fake now",
+    "intent": "Frustration Expressing",
+    "scenario": "Casual user noticing the uncanny valley effect in modern stock photography.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "block midjourney images from google results",
+    "intent": "Solution Seeking",
+    "scenario": "Artist trying to find traditional art references without digital 'slop'.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "how to tell if a pinterest recipe photo is ai",
+    "intent": "Verification",
+    "scenario": "Home cook suspicious of impossible-looking food photography.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "remove ai slop from artstation feed",
+    "intent": "Platform-Specific Fix",
+    "scenario": "Professional concept artist looking for human-made portfolio inspiration.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "browser extension to hide ai images on etsy",
+    "intent": "Solution Seeking",
+    "scenario": "Shopper trying to buy handmade goods but seeing AI-generated product mockups.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "get rid of weird ai hands in image search",
+    "intent": "Frustration Expressing",
+    "scenario": "User annoyed by anatomical errors in search results.",
+    "difficulty": 1
+  },
+  {
+    "keyword": "real human art only chrome extension",
+    "intent": "Tool Discovery",
+    "scenario": "Art enthusiast wanting to support human creators exclusively.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "is this interior design photo ai or real",
+    "intent": "Verification",
+    "scenario": "Homeowner looking for realistic renovation ideas that are actually buildable.",
+    "difficulty": 5
+  },
+  {
+    "keyword": "stop seeing ai generated travel photos",
+    "intent": "Solution Seeking",
+    "scenario": "Traveler looking for authentic destination photos instead of idealized AI landscapes.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "how to filter out ai garbage on unsplash",
+    "intent": "Platform-Specific Fix",
+    "scenario": "Blogger looking for authentic high-resolution photography.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "unfollow ai influencers instagram tool",
+    "intent": "Solution Seeking",
+    "scenario": "Social media user cleaning their feed of non-human entities.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "authentic tattoo ideas without ai distortion",
+    "intent": "Solution Seeking",
+    "scenario": "User looking for a tattoo design that a human can actually ink.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "why is everything on pinterest ai now",
+    "intent": "Frustration Expressing",
+    "scenario": "Long-time Pinterest user feeling the platform has become unusable.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "how to find real vintage photos not ai",
+    "intent": "Solution Seeking",
+    "scenario": "Historian or collector looking for authentic archival imagery.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "filter out ai generated architecture on instagram",
+    "intent": "Platform-Specific Fix",
+    "scenario": "Architecture student looking for real structural references.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "detecting ai slop in product listings",
+    "intent": "Solution Seeking",
+    "scenario": "Online shopper avoiding 'scammy' looking products on Amazon/eBay.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "google search results for real people only",
+    "intent": "Solution Seeking",
+    "scenario": "User searching for portraits of real people for a presentation.",
+    "difficulty": 5
+  },
+  {
+    "keyword": "tired of seeing ai generated faces",
+    "intent": "Frustration Expressing",
+    "scenario": "User experiencing AI fatigue from seeing perfectly symmetrical, soulless faces.",
+    "difficulty": 1
+  },
+  {
+    "keyword": "how to block dall-e images on mobile",
+    "intent": "Solution Seeking",
+    "scenario": "Mobile user wanting a cleaner browsing experience on the go.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "authentic crochet patterns that aren't ai",
+    "intent": "Solution Seeking",
+    "scenario": "Crafter frustrated by AI images of crochet that are physically impossible to make.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "stop ai images from appearing in my feed",
+    "intent": "Solution Seeking",
+    "scenario": "General user wanting to opt-out of the AI-generated internet.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "how to spot fake ai generated landscapes",
+    "intent": "Verification",
+    "scenario": "Nature lover wanting to see real places to visit.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "tool to remove ai art from google images",
+    "intent": "Tool Discovery",
+    "scenario": "Graphic designer needing a clean search environment.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "is every image on the internet ai now",
+    "intent": "Frustration Expressing",
+    "scenario": "User experiencing the 'Dead Internet Theory' firsthand.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "how to find human made textures for 3d",
+    "intent": "Solution Seeking",
+    "scenario": "3D artist looking for authentic photographic textures.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "block ai art on deviantart 2026",
+    "intent": "Platform-Specific Fix",
+    "scenario": "Art fan trying to find original character designs by humans.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "why are google images so low quality lately",
+    "intent": "Frustration Expressing",
+    "scenario": "User noticing the 'slop' transition in search engines.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "real wedding photography inspiration no ai",
+    "intent": "Solution Seeking",
+    "scenario": "Bride-to-be looking for realistic expectations for her wedding.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "how to hide ai generated pets on social media",
+    "intent": "Solution Seeking",
+    "scenario": "Animal lover tired of seeing fake 'cute' animals.",
+    "difficulty": 1
+  },
+  {
+    "keyword": "identify ai generated fashion photos",
+    "intent": "Verification",
+    "scenario": "Fashion student analyzing real fabric drape vs AI hallucination.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "get rid of ai generated furniture on pinterest",
+    "intent": "Solution Seeking",
+    "scenario": "User trying to buy real furniture but finding only AI concepts.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "app to filter ai images on phone",
+    "intent": "Tool Discovery",
+    "scenario": "User wanting a 'clean' browsing experience across all apps.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "authentic street photography vs ai",
+    "intent": "Verification",
+    "scenario": "Photography enthusiast looking for real human moments.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "how to block ai art on chrome",
+    "intent": "Solution Seeking",
+    "scenario": "General desktop user seeking a cleaner web.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "stop seeing ai art on my dashboard",
+    "intent": "Solution Seeking",
+    "scenario": "Tumblr or Pinterest user wanting a curated human experience.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "why does ai art look so greasy",
+    "intent": "Frustration Expressing",
+    "scenario": "User complaining about the specific texture of AI 'slop'.",
+    "difficulty": 1
+  },
+  {
+    "keyword": "how to find real gardening photos not ai",
+    "intent": "Solution Seeking",
+    "scenario": "Gardener looking for real plant growth patterns.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "filter out ai generated logos on pinterest",
+    "intent": "Platform-Specific Fix",
+    "scenario": "Brand designer looking for professional human-designed logos.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "is this a real photo or ai slop",
+    "intent": "Verification",
+    "scenario": "User questioning the authenticity of a news-related image.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "how to hide ai art on reddit",
+    "intent": "Platform-Specific Fix",
+    "scenario": "Reddit user wanting to see human-made content in art subreddits.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "find real makeup swatches not ai",
+    "intent": "Solution Seeking",
+    "scenario": "Beauty enthusiast looking for authentic product representation.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "stop ai art from ruining image search",
+    "intent": "Frustration Expressing",
+    "scenario": "User feeling that search engines are becoming broken.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "how to block ai influencers on tiktok",
+    "intent": "Platform-Specific Fix",
+    "scenario": "User wanting to interact with real humans only.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "identifying ai artifacts in historical photos",
+    "intent": "Verification",
+    "scenario": "Researcher checking if an old photo has been 'enhanced' by AI.",
+    "difficulty": 5
+  },
+  {
+    "keyword": "real cat photos not ai generated",
+    "intent": "Solution Seeking",
+    "scenario": "User looking for authentic pet photography.",
+    "difficulty": 1
+  },
+  {
+    "keyword": "how to find non-ai art on the web",
+    "intent": "Solution Seeking",
+    "scenario": "Collector looking to purchase real digital art.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "filter ai art out of my life",
+    "intent": "Frustration Expressing",
+    "scenario": "User suffering from extreme AI fatigue.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "is my pinterest feed all ai",
+    "intent": "Frustration Expressing",
+    "scenario": "User realizing their algorithm has been taken over by slop.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "how to spot ai fake food",
+    "intent": "Verification",
+    "scenario": "User browsing restaurant menus or food blogs.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "block stable diffusion images in browser",
+    "intent": "Solution Seeking",
+    "scenario": "User wanting to filter specific AI models from their view.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "find real people on dating apps no ai",
+    "intent": "Solution Seeking",
+    "scenario": "Dating app user tired of bots and AI-generated profiles.",
+    "difficulty": 6
+  },
+  {
+    "keyword": "how to hide ai generated landscape photography",
+    "intent": "Solution Seeking",
+    "scenario": "Nature enthusiast looking for real hiking trail photos.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "why are all the images on google blurry and fake",
+    "intent": "Frustration Expressing",
+    "scenario": "User noticing the low quality of AI-upscaled 'slop'.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "best ai slop blocker for chrome",
+    "intent": "Tool Discovery",
+    "scenario": "User actively looking for a product like Slop Killer.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "filter out ai generated product photos on amazon",
+    "intent": "Platform-Specific Fix",
+    "scenario": "Shopper wanting to see what the item actually looks like.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "how to find real watercolor art not ai",
+    "intent": "Solution Seeking",
+    "scenario": "Art student studying real pigment behavior.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "stop showing me ai art on google images",
+    "intent": "Solution Seeking",
+    "scenario": "User wanting to revert search to pre-AI quality.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "how to detect ai art on instagram",
+    "intent": "Verification",
+    "scenario": "User wanting to know if they are following a real person.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "is this hair color photo ai generated",
+    "intent": "Verification",
+    "scenario": "User taking a photo to a salon and wanting to know if it's achievable.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "block ai art on firefox",
+    "intent": "Solution Seeking",
+    "scenario": "Firefox user looking for privacy/cleanliness extensions.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "how to find real drawing references without ai",
+    "intent": "Solution Seeking",
+    "scenario": "Artist needing accurate human anatomy.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "get rid of ai slop on my tumblr",
+    "intent": "Platform-Specific Fix",
+    "scenario": "User cleaning their social blog feed.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "why do all ai images have the same lighting",
+    "intent": "Frustration Expressing",
+    "scenario": "User noticing the repetitive 'AI look'.",
+    "difficulty": 1
+  },
+  {
+    "keyword": "how to tell if a profile picture is ai",
+    "intent": "Verification",
+    "scenario": "Business professional vetting LinkedIn connections.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "filter out ai generated comics",
+    "intent": "Solution Seeking",
+    "scenario": "Comic fan looking for human-drawn indie artists.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "stop ai art from appearing on pinterest mobile",
+    "intent": "Solution Seeking",
+    "scenario": "User browsing Pinterest on their phone.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "is the dead internet theory real 2026",
+    "intent": "Frustration Expressing",
+    "scenario": "User feeling isolated in a sea of bot-generated content.",
+    "difficulty": 5
+  },
+  {
+    "keyword": "how to block ai generated textures on blender",
+    "intent": "Platform-Specific Fix",
+    "scenario": "3D artist wanting to avoid low-quality AI assets.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "find real apartment photos not ai generated",
+    "intent": "Solution Seeking",
+    "scenario": "Renter looking for a new home without being scammed by AI renders.",
+    "difficulty": 5
+  },
+  {
+    "keyword": "why are there so many ai images on unsplash",
+    "intent": "Frustration Expressing",
+    "scenario": "Content creator losing trust in free stock sites.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "how to spot ai generated jewelry",
+    "intent": "Verification",
+    "scenario": "Shopper looking for real craftsmanship on Etsy.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "block ai art on safari ios",
+    "intent": "Solution Seeking",
+    "scenario": "iPhone user wanting a clean mobile web experience.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "filter out ai generated movie posters",
+    "intent": "Solution Seeking",
+    "scenario": "Cinephile looking for real graphic design work.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "how to find human art on artstation",
+    "intent": "Solution Seeking",
+    "scenario": "Recruiter looking for real talent to hire.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "is this car photo ai or real",
+    "intent": "Verification",
+    "scenario": "Car enthusiast looking at concept vs reality.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "why is google images full of ai slop",
+    "intent": "Frustration Expressing",
+    "scenario": "User venting about the degradation of search quality.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "how to hide ai art on twitter x",
+    "intent": "Platform-Specific Fix",
+    "scenario": "User wanting to see real artists in their 'For You' feed.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "authentic nature photos no ai artifacts",
+    "intent": "Solution Seeking",
+    "scenario": "Desktop wallpaper seeker wanting real beauty.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "detecting ai generated skin textures",
+    "intent": "Verification",
+    "scenario": "Dermatologist or beauty editor checking for realism.",
+    "difficulty": 5
+  },
+  {
+    "keyword": "block ai generated icons in search",
+    "intent": "Solution Seeking",
+    "scenario": "Web designer looking for real SVG icons.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "how to find real wood grain photos not ai",
+    "intent": "Solution Seeking",
+    "scenario": "Woodworker looking for authentic material references.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "stop ai generated ads in my feed",
+    "intent": "Solution Seeking",
+    "scenario": "User annoyed by low-quality AI-generated advertising.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "is this illustration made by a human",
+    "intent": "Verification",
+    "scenario": "Book publisher vetting an illustrator.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "how to hide ai art on bing search",
+    "intent": "Solution Seeking",
+    "scenario": "User trying to avoid Microsoft's heavy AI integration.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "why does ai art have extra fingers",
+    "intent": "Frustration Expressing",
+    "scenario": "User mocking the persistent failures of AI.",
+    "difficulty": 1
+  },
+  {
+    "keyword": "filter out ai generated 3d models",
+    "intent": "Solution Seeking",
+    "scenario": "Game developer looking for clean topology.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "how to find non-ai stock photos",
+    "intent": "Solution Seeking",
+    "scenario": "Marketing manager wanting authentic brand imagery.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "is this cat photo real or ai generated",
+    "intent": "Verification",
+    "scenario": "User seeing a 'too cute to be true' animal photo.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "block ai art on ipad browser",
+    "intent": "Solution Seeking",
+    "scenario": "Artist using an iPad for inspiration but getting distracted by slop.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "why are pinterest boards full of ai junk",
+    "intent": "Frustration Expressing",
+    "scenario": "User cleaning up a collaborative board.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "how to find real people's homes on pinterest",
+    "intent": "Solution Seeking",
+    "scenario": "User looking for realistic DIY home decor.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "is this a real painting or ai",
+    "intent": "Verification",
+    "scenario": "Art gallery visitor or online buyer.",
+    "difficulty": 4
+  },
+  {
+    "keyword": "filter out ai generated anime art",
+    "intent": "Solution Seeking",
+    "scenario": "Anime fan looking for hand-drawn sakuga and illustrations.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "how to hide ai art on pixiv",
+    "intent": "Platform-Specific Fix",
+    "scenario": "Fan artist looking for human-made works.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "get rid of ai generated sky photos",
+    "intent": "Solution Seeking",
+    "scenario": "Photographer looking for real sky overlays.",
+    "difficulty": 2
+  },
+  {
+    "keyword": "is every photo on facebook ai now",
+    "intent": "Frustration Expressing",
+    "scenario": "Older user confused by the sudden influx of fake imagery.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "how to block ai art on opera browser",
+    "intent": "Solution Seeking",
+    "scenario": "Opera user seeking customization tools.",
+    "difficulty": 3
+  },
+  {
+    "keyword": "find authentic human faces for design",
+    "intent": "Solution Seeking",
+    "scenario": "UI designer needing realistic user avatars.",
+    "difficulty": 4
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

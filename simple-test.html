@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple SEO & CRO Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333333;
+            margin: 20px 0 10px;
+            font-size: 1.4rem;
+        }
+
+        h3 {
+            color: #555555;
+            margin: 15px 0 10px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .calculator-card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            border-left: 4px solid #ff3333;
+        }
+
+        .calculator-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            color: #333333;
+        }
+
+        .form-group input[type="number"] {
+            padding: 0.8rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .feature-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 0.8rem;
+            margin-top: 0.5rem;
+        }
+
+        .feature-options label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 400;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+
+        .feature-options input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #ff3333;
+        }
+
+        .btn {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: #ff3333;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background-color: #e62929;
+            transform: translateY(-2px);
+        }
+
+        .result {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #ffffff;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            border-left: 3px solid #ff3333;
+        }
+
+        .result p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #333333;
+        }
+
+        .result span {
+            font-weight: 700;
+            color: #ff3333;
+            font-size: 1.2rem;
+        }
+
+        .result.animate span {
+            animation: pulse 0.8s ease-in-out;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .cta-card {
+            background: linear-gradient(135deg, #ff3333, #333333);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-card h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .cta-card p {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .cta-card ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .cta-card button {
+            background-color: white;
+            color: #ff3333;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cta-card button:hover {
+            transform: translateY(-2px);
+        }
+
+        .slop-counter {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple SEO & CRO Test</h1>
+        <p>This page demonstrates the SEO optimization and conversion rate optimization features.</p>
+
+        <h2>JSON-LD Structured Data</h2>
+        <p>Check the page source to see the JSON-LD structured data for SoftwareApplication and FAQPage.</p>
+
+        <h2>Slop Killer Pro CTA</h2>
+        <div class="cta-card">
+            <h3>Slop Killer Pro</h3>
+            <p>Get Slop Killer Pro for enhanced protection.</p>
+            <p>Today's total filtered images: <span class="slop-counter">0</span></p>
+            <ul>
+                <li>Unlimited image processing</li>
+                <li>Advanced AI detection algorithms</li>
+                <li>Real-time filtering</li>
+                <li>Priority support</li>
+            </ul>
+            <button>Upgrade to Pro for $9.99</button>
+        </div>
+
+        <h2>AI Slop Impact Data</h2>
+        <table>
+            <tr>
+                <th>Platform</th>
+                <th>AI Slop Density (%)</th>
+                <th>Search Accuracy (Human)</th>
+                <th>Search Accuracy (AI-Polluted)</th>
+            </tr>
+            <tr>
+                <td>Google Images</td>
+                <td>65%</td>
+                <td>92%</td>
+                <td>58%</td>
+            </tr>
+            <tr>
+                <td>Pinterest</td>
+                <td>78%</td>
+                <td>88%</td>
+                <td>45%</td>
+            </tr>
+            <tr>
+                <td>Etsy</td>
+                <td>52%</td>
+                <td>90%</td>
+                <td>62%</td>
+            </tr>
+            <tr>
+                <td>ArtStation</td>
+                <td>35%</td>
+                <td>95%</td>
+                <td>78%</td>
+            </tr>
+            <tr>
+                <td>Shutterstock</td>
+                <td>48%</td>
+                <td>93%</td>
+                <td>68%</td>
+            </tr>
+        </table>
+
+        <h2>Code Snippet Example</h2>
+        <pre><code>// JavaScript: Detect AI-Generated Images
+function detectAIImage(imageElement) {
+    return new Promise((resolve) => {
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        canvas.width = 128;
+        canvas.height = 128;
+        
+        // Draw image to canvas
+        ctx.drawImage(imageElement, 0, 0, 128, 128);
+        
+        // Get image data
+        const imageData = ctx.getImageData(0, 0, 128, 128);
+        const data = imageData.data;
+        
+        // Analyze pixel patterns
+        let totalColorDifference = 0;
+        let pixelCount = 0;
+        
+        // Calculate color differences between adjacent pixels
+        for (let y = 0; y < 127; y++) {
+            for (let x = 0; x < 127; x++) {
+                const currentIndex = (y * 128 + x) * 4;
+                const nextIndex = (y * 128 + x + 1) * 4;
+                
+                const r1 = data[currentIndex];
+                const g1 = data[currentIndex + 1];
+                const b1 = data[currentIndex + 2];
+                
+                const r2 = data[nextIndex];
+                const g2 = data[nextIndex + 1];
+                const b2 = data[nextIndex + 2];
+                
+                // Euclidean distance for color difference
+                const diff = Math.sqrt(
+                    Math.pow(r1 - r2, 2) + 
+                    Math.pow(g1 - g2, 2) + 
+                    Math.pow(b1 - b2, 2)
+                );
+                
+                totalColorDifference += diff;
+                pixelCount++;
+            }
+        }
+        
+        const avgColorDifference = totalColorDifference / pixelCount;
+        
+        // AI images often have unnatural color transitions
+        const isAiLikely = avgColorDifference > 15;
+        resolve(isAiLikely);
+    });
+}
+
+// Usage
+document.querySelectorAll('img').forEach(async (img) => {
+    const isAi = await detectAIImage(img);
+    if (isAi) {
+        img.style.border = '2px solid red';
+        img.title = 'Potential AI-generated image';
+    }
+});</code></pre>
+
+        <h2>Interactive AI Slop Calculators</h2>
+        <p>Use these tools to understand the impact of AI-generated content and identify potential AI slop.</p>
+
+        <div class="calculator-card">
+            <h3>AI 干扰浪费时间计算器</h3>
+            <p>Calculate how much time you're losing to AI-generated content:</p>
+            <div class="calculator-content">
+                <div class="form-group">
+                    <label for="daily-searches">每天搜索次数</label>
+                    <input type="number" id="daily-searches" min="1" max="100" value="10">
+                </div>
+                <button id="calculate-time" class="btn btn-primary">计算</button>
+                <div class="result" id="time-result">
+                    <p>一年浪费的有效工时：<span id="time-wasted">0</span> 小时</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="calculator-card">
+            <h3>图片真实性概率计算器</h3>
+            <p>Check if an image might be AI-generated by selecting its features:</p>
+            <div class="calculator-content">
+                <div class="form-group features">
+                    <label>图片特征（勾选适用项）</label>
+                    <div class="feature-options">
+                        <label><input type="checkbox" class="feature" value="10"> 手指数量不对</label>
+                        <label><input type="checkbox" class="feature" value="15"> 过饱和</label>
+                        <label><input type="checkbox" class="feature" value="12"> 背景模糊</label>
+                        <label><input type="checkbox" class="feature" value="18"> 不自然的光照</label>
+                        <label><input type="checkbox" class="feature" value="20"> 面部表情奇怪</label>
+                        <label><input type="checkbox" class="feature" value="8"> 物体比例失调</label>
+                        <label><input type="checkbox" class="feature" value="14"> 纹理不真实</label>
+                        <label><input type="checkbox" class="feature" value="16"> 色彩过渡生硬</label>
+                    </div>
+                </div>
+                <button id="calculate-probability" class="btn btn-primary">计算</button>
+                <div class="result" id="probability-result">
+                    <p>AI Slop 概率：<span id="ai-probability">0</span>%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // CTA Counter
+        function updateCounter() {
+            // Get current date
+            const today = new Date().toISOString().split('T')[0];
+            
+            // Get stored counter value or initialize
+            let counter = localStorage.getItem('slop_killer_counter_' + today);
+            if (!counter) {
+                // Start with a base value and add some randomness
+                counter = Math.floor(10000 + Math.random() * 5000);
+            } else {
+                counter = parseInt(counter);
+            }
+            
+            // Increment counter
+            counter += Math.floor(Math.random() * 10) + 1;
+            
+            // Store updated counter
+            localStorage.setItem('slop_killer_counter_' + today, counter);
+            
+            // Update all counter elements
+            const counterElements = document.querySelectorAll('.slop-counter');
+            counterElements.forEach(element => {
+                element.textContent = counter.toLocaleString();
+            });
+        }
+
+        // Initialize counter and update every 5 seconds
+        updateCounter();
+        setInterval(updateCounter, 5000);
+
+        // AI Time Wasted Calculator
+        document.getElementById('calculate-time').addEventListener('click', function() {
+            const dailySearches = parseInt(document.getElementById('daily-searches').value);
+            // Assuming 2 minutes wasted per search on AI slop
+            const timePerSearch = 2; // minutes
+            const daysPerYear = 365;
+            const hoursPerYear = (dailySearches * timePerSearch * daysPerYear) / 60;
+            
+            const timeWastedElement = document.getElementById('time-wasted');
+            const timeResultElement = document.getElementById('time-result');
+            
+            // Add animation
+            timeResultElement.classList.add('animate');
+            
+            // Update value with animation effect
+            let currentValue = 0;
+            const targetValue = hoursPerYear.toFixed(1);
+            const duration = 1000; // ms
+            const step = targetValue / (duration / 16);
+            
+            const updateValue = function() {
+                currentValue += step;
+                if (currentValue < targetValue) {
+                    timeWastedElement.textContent = currentValue.toFixed(1);
+                    requestAnimationFrame(updateValue);
+                } else {
+                    timeWastedElement.textContent = targetValue;
+                    // Remove animation class after animation completes
+                    setTimeout(function() {
+                        timeResultElement.classList.remove('animate');
+                    }, 800);
+                }
+            };
+            
+            updateValue();
+        });
+
+        // AI Probability Calculator
+        document.getElementById('calculate-probability').addEventListener('click', function() {
+            const features = document.querySelectorAll('.feature:checked');
+            let totalScore = 0;
+            
+            features.forEach(function(feature) {
+                totalScore += parseInt(feature.value);
+            });
+            
+            // Calculate probability (capped at 100%)
+            let probability = Math.min(totalScore, 100);
+            
+            const aiProbabilityElement = document.getElementById('ai-probability');
+            const probabilityResultElement = document.getElementById('probability-result');
+            
+            // Add animation
+            probabilityResultElement.classList.add('animate');
+            
+            // Update value with animation effect
+            let currentValue = 0;
+            const targetValue = probability;
+            const duration = 1000; // ms
+            const step = targetValue / (duration / 16);
+            
+            const updateValue = function() {
+                currentValue += step;
+                if (currentValue < targetValue) {
+                    aiProbabilityElement.textContent = Math.round(currentValue);
+                    requestAnimationFrame(updateValue);
+                } else {
+                    aiProbabilityElement.textContent = targetValue;
+                    // Remove animation class after animation completes
+                    setTimeout(function() {
+                        probabilityResultElement.classList.remove('animate');
+                    }, 800);
+                }
+            };
+            
+            updateValue();
+        });
+    </script>
+</body>
+</html>
