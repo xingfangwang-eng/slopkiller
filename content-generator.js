@@ -847,6 +847,7 @@ pages.forEach(page => {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="uTT2vLHXrvh44esSpln_EMc1QEFjkN0vjJZ04UgI0Qc" />
     <title>${page.title}</title>
     <meta name="description" content="${page.metaDescription}">
     ${page.jsonLd}

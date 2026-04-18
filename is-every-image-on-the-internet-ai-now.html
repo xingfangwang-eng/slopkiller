@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="uTT2vLHXrvh44esSpln_EMc1QEFjkN0vjJZ04UgI0Qc" />
     <title>is every image on the internet ai now | Slop Killer - Filter AI-Generated Content</title>
     <meta name="description" content="Tired of is every image on the internet ai now? Slop Killer helps you filter out AI-generated content and find authentic, human-created images. User experiencing the 'Dead Internet Theory' firsthand.">
     
@@ -526,10 +527,6 @@
 <p>These AI systems are trained on vast datasets of human-created content, but they lack the creativity, context, and attention to detail that human artists bring to their work. The result is often uncanny, low-quality images that follow predictable patterns and suffer from common artifacts like extra fingers, unrealistic lighting, and generic compositions.</p>
 <p>Search engines, in their quest to index fresh content, often prioritize these AI-generated images because they're produced at such a rapid pace. This creates a vicious cycle where AI content crowds out human-created work, making it harder for users to find authentic images.</p>
 
-<h2>The Growing Problem of AI-Generated Content</h2>
-<p>In today's digital age, users like you in San Francisco are increasingly frustrated by the overwhelming amount of AI-generated content cluttering the internet. User experiencing the 'Dead Internet Theory' firsthand. This issue has become particularly prevalent in image search results, where AI-generated "slop" often outranks authentic, human-created content.</p>
-<p>The problem has reached a critical point in 2026, with major platforms like Pinterest, Google Images, and Etsy becoming flooded with AI-generated images that lack the authenticity and quality of human-created work. Many users report feeling overwhelmed and disillusioned by the constant barrage of fake imagery.</p>
-
 <h2>How Slop Killer Works</h2>
 <p>Slop Killer employs a multi-layered approach to detect and filter AI-generated content:</p>
 <ol>
@@ -539,6 +536,10 @@
 <li><strong>Continuous Learning</strong>: Slop Killer's algorithms are constantly updated to keep pace with the latest AI generation techniques, ensuring it remains effective against new forms of AI slop.</li>
 <li><strong>User Customization</strong>: Users can adjust the filtering strength based on their specific needs, allowing for a personalized browsing experience.</li>
 </ol>
+
+<h2>The Growing Problem of AI-Generated Content</h2>
+<p>In today's digital age, users like you in Sydney are increasingly frustrated by the overwhelming amount of AI-generated content cluttering the internet. User experiencing the 'Dead Internet Theory' firsthand. This issue has become particularly prevalent in image search results, where AI-generated "slop" often outranks authentic, human-created content.</p>
+<p>The problem has reached a critical point in 2026, with major platforms like Pinterest, Google Images, and Etsy becoming flooded with AI-generated images that lack the authenticity and quality of human-created work. Many users report feeling overwhelmed and disillusioned by the constant barrage of fake imagery.</p>
 
 <div style="background: linear-gradient(135deg, #ff3333, #333333); color: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); position: fixed; right: 2rem; top: 50%; transform: translateY(-50%); z-index: 1000; width: 300px;">
     <div style="display: flex; flex-direction: column; gap: 1rem;">
@@ -573,49 +574,54 @@
 
 <h2>Slop Killer: Your Solution to AI Clutter</h2>
 <p>Fortunately, there's a powerful tool designed specifically to address this problem: Slop Killer. This innovative solution uses advanced AI detection algorithms to identify and filter out AI-generated content from your search results and social media feeds.</p>
-<p>Slop Killer works by analyzing multiple visual and metadata cues to distinguish between human-created and AI-generated images. Users in Hong Kong and around the world are already reporting significant improvements in their browsing experience after implementing Slop Killer.</p>
+<p>Slop Killer works by analyzing multiple visual and metadata cues to distinguish between human-created and AI-generated images. Users in Singapore and around the world are already reporting significant improvements in their browsing experience after implementing Slop Killer.</p>
 <p>Whether you're a professional designer looking for authentic references, a blogger seeking high-quality stock photos, or simply a user tired of seeing fake content, Slop Killer provides a clean, curated browsing experience.</p>
 
-<h2>Code Snippet: Ruby: Analyze Image for AI Generation</h2>
-<p>Use this Ruby code to analyze images for AI generation indicators:</p>
-<pre><code class="ruby">require 'mini_magick'
+<h2>Code Snippet: PHP: Detect AI-Generated Images</h2>
+<p>Use this PHP code to detect AI-generated images on your website:</p>
+<pre><code class="php"><?php
+function detectAIImage($imagePath) {
+    $extension = strtolower(pathinfo($imagePath, PATHINFO_EXTENSION));
+    $allowedExtensions = ['jpg', 'jpeg', 'png', 'webp'];
+    
+    if (!in_array($extension, $allowedExtensions)) {
+        return false;
+    }
+    
+    $filename = strtolower(basename($imagePath));
+    $aiKeywords = ['midjourney', 'dall-e', 'stable diffusion', 'ai generated', 'ai art'];
+    
+    foreach ($aiKeywords as $keyword) {
+        if (strpos($filename, $keyword) !== false) {
+            return true;
+        }
+    }
+    
+    if (extension_loaded('exif')) {
+        try {
+            $exif = exif_read_data($imagePath, 'ANY_TAG', true);
+            if ($exif) {
+                $exifString = strtolower(print_r($exif, true));
+                foreach ($aiKeywords as $keyword) {
+                    if (strpos($exifString, $keyword) !== false) {
+                        return true;
+                    }
+                }
+            }
+        } catch (Exception $e) {
+        }
+    }
+    
+    return false;
+}
 
-def detect_ai_image(image_path)
-  begin
-    image = MiniMagick::Image.open(image_path)
-    
-    filename = File.basename(image_path).downcase
-    ai_keywords = ['midjourney', 'dall-e', 'stable diffusion', 'ai generated']
-    
-    ai_keywords.each do |keyword|
-      return true if filename.include?(keyword)
-    end
-    
-    width, height = image.dimensions
-    aspect_ratio = width.to_f / height
-    if aspect_ratio > 3 || aspect_ratio < 0.3
-      return true
-    end
-    
-    begin
-      exif = image.exif
-      if exif
-        exif_string = exif.to_s.downcase
-        ai_keywords.each do |keyword|
-          return true if exif_string.include?(keyword)
-        end
-      end
-    rescue
-    end
-    
-    false
-  rescue
-    false
-  end
-end
-
-result = detect_ai_image('image.jpg')
-puts "Is AI-generated: #{result}"</code></pre>
+$imagePath = 'path/to/image.jpg';
+if (detectAIImage($imagePath)) {
+    echo "This image is likely AI-generated.";
+} else {
+    echo "This image appears to be human-created.";
+}
+?></code></pre>
 
 ## AI Slop Impact Data
 
@@ -641,8 +647,7 @@ This table shows the impact of AI-generated content on different platforms:
     <td style="border: 1px solid #ddd; padding: 12px;">169%</td>
   </tr>
   <tr style="background-color: #ffffff;">
-    <td style="border: 1px solid #ddd; padding: 12px;">Etsy</td>
-    <td style="
+    <td 
 
 <div style="background: linear-gradient(135deg, #ff3333, #333333); color: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); position: fixed; right: 2rem; top: 50%; transform: translateY(-50%); z-index: 1000; width: 300px;">
     <div style="display: flex; flex-direction: column; gap: 1rem;">
@@ -661,7 +666,8 @@ This table shows the impact of AI-generated content on different platforms:
     </div>
 </div>
 
-border: 1px solid #ddd; padding: 12px;">72%</td>
+style="border: 1px solid #ddd; padding: 12px;">Etsy</td>
+    <td style="border: 1px solid #ddd; padding: 12px;">72%</td>
     <td style="border: 1px solid #ddd; padding: 12px;">79%</td>
     <td style="border: 1px solid #ddd; padding: 12px;">116%</td>
   </tr>
